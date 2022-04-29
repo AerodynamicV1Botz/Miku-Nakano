@@ -57,7 +57,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 	
   <h1>
     <p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/h0daka/Miku-Nakano">
+        <a href="https://heroku.com/deploy?template=https://github.com/AerodynamicV1Botz/Miku-Nakano">
             <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
         </a>
     </p>
@@ -74,7 +74,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 </p>
 
 ```console
-    ~$ git clone https://github.com/h0daka/Miku-Nakano
+    ~$ git clone https://github.com/AerodynamicV1Botz/Miku-Nakano
     ~$ cd Miku-Nakano
     ~$ cp sample_config.py config.py
 ```
