@@ -56,11 +56,18 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🏹 Summon Me",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             text="👁️‍🗨️Store💎",
+                             url="https://t.me/AerodynamicV1_Store_TG"),
                         InlineKeyboardButton(
-                             text="🗞️ Repo",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             text="Support💬",
+                             url="https://t.me/AerodynamicV1_SUPPORT"),
+[
+InlineKeyboardButton(
+                             text="Free Promotion🚀",
+                             url="https://t.me/AerodynamicV1_Promotion"),
+InlineKeyboardButton(
+                             text="New Update✅",
+                             url="https://t.me/AerodynamicV1_UPDATE"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -214,10 +221,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/MikusSupport"),
+                             url=f"https://t.me/AerodynamicV1_Promotion"),
                        InlineKeyboardButton(
                              text="🛰️ Updates",
-                             url="https://t.me/MikuXUpdates")
+                             url="https://t.me/AerodynamicV1_UPDATE")
                      ] 
                 ]
             ),
@@ -275,7 +282,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/AerodynamicV1_Promotion")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -323,18 +330,18 @@ def miku_callback_data(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n❍ Miku licensed under the GNU General Public License v3.0
-                 \n❍ If you have any question about Miku, let us know at [Miku Support](t.me/{SUPPORT_CHAT}).""",
+                 \n❍ If you have any question about Miku, let us know at [AeroXPro Support](t.me/{SUPPORT_CHAT}).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/h0daka"),
+                    InlineKeyboardButton(text="🌏 My Master", url="t.me/AerodynamicV1_OFFICIAL"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/MikuXUpdates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/Mikussupport"),
+                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/AerodynamicV1_UPDATE"),
+                    InlineKeyboardButton(text="🚑 Support", url="t.me/AerodynamicV1_Promotion"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
@@ -382,7 +389,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/AeroXProBot?start=help")
                   ]
                 ]
             ),
@@ -399,7 +406,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/AerodynamicV1_Promotion")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -597,15 +604,15 @@ def main():
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[► Summon Me◄]",
-                             url="https://t.me/MikuXProBot?startgroup=true")
+                             text="[👁️‍🗨️Store💎]",
+                             url="https://t.me/AerodynamicV1_Store_TG")
                      ] 
                 ]
             ),
         ) 
         except Unauthorized:
             LOGGER.warning(
-                "Miku can't able to send message to support_chat, go and check!")
+                "AeroXPro can't able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
 
